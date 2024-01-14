@@ -79,7 +79,7 @@ jobs:
         
   integration:
     runs-on: ubuntu-20.04
-    needs: oast
+    needs: [oast-frontend-retirejs, oast-safety]
     steps:
       - run: echo "This is an integration step"
       - run: exit 1
